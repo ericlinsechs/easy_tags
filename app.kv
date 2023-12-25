@@ -1,0 +1,73 @@
+BoxLayout:
+    orientation: "horizontal"
+
+    FileChooserListView:
+        id: file_chooser
+        path: app.file_chooser_path()
+        font_name: "./fonts/DroidSansFallback.ttf"
+        on_selection: app.on_selection(self)
+
+    BoxLayout:
+        orientation: "vertical"
+
+        GridLayout:
+            cols: 2
+            height: self.minimum_height
+            row_default_height: 30
+            size_hint: (1, None)
+            padding: 80, 10
+
+            canvas:
+                Color:
+                    rgb: 0.2, 0.2, 0.2
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+            Label:
+                text: "Create new tag:"
+                text_size: self.size
+                font_size: '19sp'
+                size_hint_x: 0.8
+                halign: 'left'
+                valign: 'bottom'
+            TextInput:
+                id: ti
+                font_size: '15sp'
+                font_name: "./fonts/DroidSansFallback.ttf"
+                background_color: (1, 1, 1, 1)
+                foreground_color: (0, 0, 0, 1)
+                text_size: self.size
+                hint_text: "New tag name"
+                hint_text_color: (0.5,0.5,0.5,1)
+                size_hint: (1, None)
+                height: min(max(self.line_height, self.minimum_height), 150)
+                multiline: False
+                focus: True
+                on_text_validate:
+                    app.input_tag(self)
+
+        Label:
+            text: app.file_name
+            text_size: self.size
+            font_size: '19sp'
+            font_name: "./fonts/DroidSansFallback.ttf"
+            size_hint: (1, None)
+            halign: 'center'
+            valign: 'middle'
+
+        ScrollView:
+            do_scroll_x: False
+            do_scroll_y: True
+
+            GridLayout:
+                id: switch_container
+                cols: 2
+                size_hint_y: None
+                row_default_height: 200
+                height: self.minimum_height
+                padding: 80, 10
+
+
+
+
