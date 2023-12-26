@@ -23,6 +23,7 @@ Before running Easy Tags, ensure that your system meets the following requiremen
 
 **Package Version:**
 - Python 3.10.4
+- pip 23.3.2
 - Kivy Version: 2.2.1
 
 **Run Application:**
