@@ -21,40 +21,14 @@ This project was developed as my final project for [Harvard's CS50 course](https
 
 Before running Easy Tags, ensure that your system meets the following requirements:
 
-1. **Package Version:**
-    - Python 3.10.4
-    - Kivy Version: 2.2.1
+**Package Version:**
+- Python 3.10.4
+- Kivy Version: 2.2.1
 
-2. **Install `tag` Command-Line Tool:**
-    ```bash
-    brew install tag
-    ```
-
-3. **Install Dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4. **Create Virtual Environment:**
-    ```bash
-    python -m virtualenv kivy_venv
-    ```
-
-5. **Activate Virtual Environment:**
-    ```bash
-    source kivy_venv/bin/activate
-    ```
-
-6. **Install Kivy:**
-
-    ```bash
-    python -m pip install "kivy[base]" kivy_examples
-    ```
-
-7. **Running the Application:**
-    ```bash
-    python app.py
-    ```
+**Run Application:**
+```zsh
+./setup
+```
 
 ## Dependencies
 
