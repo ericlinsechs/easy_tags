@@ -17,6 +17,15 @@ This project was developed as my final project for [Harvard's CS50 course](https
 
 - **Language Support:** English and Chinese
 
+## Modules
+
+| File | Summary |
+| ---  | --- |
+| setup.sh | A bash script automates the setup process for running a Python application named easy_tags. |
+| tags.py | Manages metadata tags on files using a command-line tool. It allows for retrieving all used tags in a user's home directory, getting tags associated with a specific file, executing various tagging commands, adding and removing tags from files. |
+| app.kv | The code constructs a user interface for a tag-based file organization application. The interface enables users to navigate through files using a FileChooserListView. It also offers a text input field for creating new tags. A switch container, accommodating two columns, provides a scrollable area for the dynamically added switch elements. Text labels depict the new tag creation field and display the selected file's name. |
+| app.py | The code represents an application named EasyTagsApp. It uses Kivy, a Python library for creating multi-touch applications. Functionalities include setting a default path for file choosing, triggering actions on file or tag selection, managing tags related to selected files. |
+
 ## Getting Started
 
 Before running Easy Tags, ensure that your system meets the following requirements:
